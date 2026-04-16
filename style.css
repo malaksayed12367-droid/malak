@@ -1,107 +1,125 @@
-
 body {
     margin: 0;
-    font-family: Arial, sans-serif;
-    background-color: #f4f7fb;
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #f5efe6; /* بيج */
+    color: #2b2b2b;
 }
 
-
+/* Header */
 header {
-    background-color: #4a90e2;
-    color: white;
-    text-align: center;
+    background-color: #355c4b; /* اخضر غامق */
+    color: #f5efe6;
     padding: 20px;
+    text-align: center;
+    font-size: 22px;
+    letter-spacing: 1px;
 }
 
+/* Navbar */
 nav {
     display: flex;
     justify-content: center;
-    background-color: #222;
-    flex-wrap: wrap;
+    background-color: #355c4b;
 }
 
 nav a {
-    color: white;
+    color: #f5efe6;
     text-decoration: none;
-    padding: 12px 20px;
+    padding: 12px 18px;
     transition: 0.3s;
 }
 
 nav a:hover {
-    background-color: #4a90e2;
+    background-color: #f2a541; /* اورنج */
+    color: #000;
+    border-radius: 8px;
 }
 
-
+/* Main layout */
 main {
-    padding: 20px;
+    padding: 40px;
 }
 
-.card {
-    background: white;
-    padding: 20px;
+/* Cards */
+.card, .form-container {
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 15px;
+    max-width: 700px;
     margin: auto;
-    max-width: 500px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
 }
 
+/* Titles */
+h1 {
+    margin: 0;
+}
 
+h2 {
+    color: #355c4b;
+}
+
+/* Table */
 table {
     width: 100%;
     border-collapse: collapse;
     background: white;
 }
 
-th, td {
-    border: 1px solid #ddd;
-    padding: 10px;
-    text-align: center;
-}
-
 th {
-    background-color: #4a90e2;
-    color: white;
+    background-color: #355c4b;
+    color: #fff;
 }
 
-
-form {
-    display: flex;
-    flex-direction: column;
+th, td {
+    padding: 12px;
+    text-align: center;
+    border-bottom: 1px solid #eee;
 }
 
+tr:hover {
+    background-color: #fdf6ec;
+}
+
+/* Form */
 input, textarea {
     margin: 8px 0 15px;
     padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 6px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
 }
 
+input:focus, textarea:focus {
+    outline: none;
+    border-color: #f2a541;
+}
+
+/* Button */
 button {
-    background-color: #4a90e2;
-    color: white;
+    background-color: #f2a541;
+    color: #000;
     border: none;
     padding: 12px;
+    border-radius: 8px;
     cursor: pointer;
-    border-radius: 6px;
 }
 
 button:hover {
-    background-color: #357abd;
+    background-color: #d98e2f;
 }
 
+/* Footer */
 footer {
-    background-color: #222;
-    color: white;
+    background-color: #355c4b;
+    color: #f5efe6;
     text-align: center;
-    padding: 10px;
-    margin-top: 20px;
-    bottom: 0;
-
+    padding: 15px;
+    margin-top: 30px;
 }
 
+/* Responsive */
 @media (max-width: 600px) {
     nav {
         flex-direction: column;
-        align-items: center;
     }
 }
